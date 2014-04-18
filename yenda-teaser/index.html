@@ -33,14 +33,14 @@
           <img src="yenda-teaser.jpg" style="width:100%" class="img-responsive img-rounded">
         </p>
         <p class="text-center">
-          <a class="btn btn-primary btn-lg center-block" style="font-size: 30px" href="https://www.youtube.com/watch?v=rthCLBelLA4">Watch Now !!!</a>
+          <a class="btn btn-primary btn-lg center-block" style="font-size: 30px" href="https://www.youtube.com/watch?v=rthCLBelLA4" onClick="_gaq.push(['_trackEvent', 'Videos', 'Play', 'Yenda-Teaser']);">Watch Now !!!</a>
         </p>
       </a>
       <p>
         <p class="text-center" style="font-size: 15px">
           Share this video
-          <a id="share-facebook" class="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?display=popup&u=http%3A%2F%2Fwww.ulamovie.com%2Fyenda-teaser%2F">Facebook</a>
-          <a id="share-twitter" class="btn btn-twitter" href="https://twitter.com/share?hashtags=ula%2Cyenda%2Cbravo%2Ccsk&text=Watch%20Chennai%20Super%20King%27s%20Bravo%20in%20Ula%20movie%20%22Yenda%22%20song%20teaser&url=http%3A%2F%2Fwww.ulamovie.com%2Fyenda-teaser%2F">Twitter</a>
+          <a id="share-facebook" class="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?display=popup&u=http%3A%2F%2Fwww.ulamovie.com%2Fyenda-teaser%2F" onClick="_gaq.push(['_trackEvent', 'Social', 'Share', 'Facebook']);">Facebook</a>
+          <a id="share-twitter" class="btn btn-twitter" href="https://twitter.com/share?hashtags=ula%2Cyenda%2Cbravo%2Ccsk&text=Watch%20Chennai%20Super%20King%27s%20Bravo%20in%20Ula%20movie%20%22Yenda%22%20song%20teaser&url=http%3A%2F%2Fwww.ulamovie.com%2Fyenda-teaser%2F" onClick="_gaq.push(['_trackEvent', 'Social', 'Share', 'Twitter']);">Twitter</a>
         </p>
       </p>
     </div><!-- /.container -->
@@ -65,6 +65,16 @@
 
       ga('create', 'UA-50145476-1', 'ulamovie.com');
       ga('send', 'pageview');
+      
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-50145476-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();      
     </script>
   </body>
 </html>
