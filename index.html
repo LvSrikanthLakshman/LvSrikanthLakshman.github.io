@@ -1,9 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=yenda-teaser"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>ULA</title>
+    <meta name="description" content="Ula Movie">
+    
+    <meta property="og:url" content="http://www.ulamovie.com/"/>
+    <meta property="og:title" content="ULA"/>
+    <meta property="og:image" content="http://www.ulamovie.com/landing.jpg"/>
+    <meta property="og:description" content="Ula Movie"/>
+    <meta property="og:type" content="movie"/>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/social-buttons.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body>
-    <a href="yenda-teaser">Click here if you are not redirected automatically</a>
+  <body style="background-color: black">
+    <div class="container">
+      <p></p>
+      <p>
+        <img src="landing.jpg" style="width:100%" class="img-responsive img-rounded">
+      </p>
+      <p class="text-center" style="font-size: 30px; color: white">Website opens at 9pm on 16th May</p>
+      <p class="text-center" style="font-size: 30px; color: white">Dont miss the chance to win a 3 day &amp; 2 night trip to Malaysia</p>
+    </div><!-- /.container -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      $('a#share-facebook').click(function(){
+        window.open($(this).attr("href"), "", "width=670,height=302");
+        return false;
+      });
+      $('a#share-twitter').click(function(){
+        window.open($(this).attr("href"), "", "width=535,height=420");
+        return false;
+      });
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-50145476-1', 'ulamovie.com');
+      ga('send', 'pageview');
+      
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-50145476-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();      
+    </script>
   </body>
 </html>
